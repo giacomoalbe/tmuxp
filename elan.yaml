@@ -1,0 +1,38 @@
+session_name: ELAN
+start_directory: ~/Documents/Lavoro/Digital74/ELAN
+windows:
+  - window_name: Mobile
+    panes:
+      - shell_command:
+        - cd client/
+        - vim
+  - window_name: FrontEnd
+    panes:
+      - shell_command:
+        - clear
+  - window_name: BackEnd
+    panes:
+      - shell_command:
+        - clear
+  - window_name: Server
+    panes:
+      - shell_command:
+        - cd mobile
+        - ionic serve --devapp
+  - window_name: Logs
+    panes:
+      - shell_command:
+        # - tail -f server/storage/logs/laravel.log
+        - clear
+  - window_name: Git
+    panes:
+      - shell_command:
+        - gs
+  - window_name: Tinker
+    panes:
+      - shell_command:
+        - clear
+  - window_name: Docker
+    panes:
+      - shell_command:
+        - clear
