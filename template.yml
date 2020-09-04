@@ -1,0 +1,17 @@
+session_name: TEMPLATE
+start_directory: ~/Documents/Lavoro/apticlab/laravel-vue-nginx-compose
+windows:
+  - window_name: Client
+    panes:
+      - shell_command:
+        - cd client/
+        - vim
+  - window_name: Server
+    panes:
+      - shell_command:
+        - cd server
+        - vim
+  - window_name: Git
+    panes:
+      - shell_command:
+        - gs

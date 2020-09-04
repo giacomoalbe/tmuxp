@@ -2,21 +2,32 @@ session_name: MIMIR
 suppress_history: false
 start_directory: ~/Documents/Lavoro/ReadyInformation/mimir
 windows:
-  - window_name: FrontEnd
+  - window_name: Selina
     panes:
       - shell_command:
-        - cd client/
+        - cd selina/
         - vim
-  - window_name: BackEnd
+  - window_name: Bruce
     panes:
       - shell_command:
-        - cd server/
+        - cd bruce/
+        - vim
+  - window_name: Lucius
+    panes:
+      - shell_command:
+        - cd lucius/
+        - vim
+  - window_name: Robin
+    panes:
+      - shell_command:
+        - cd robin/
         - vim
   - window_name: Server
     layout: main-vertical
     panes:
-      - dc logs -f server
-      - dc logs -f client
+      - dc logs -f bruce
+      - dc logs -f robin
+      - dc logs -f lucius
   - window_name: Git
     panes:
       - shell_command:

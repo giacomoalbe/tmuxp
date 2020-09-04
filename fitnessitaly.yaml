@@ -1,5 +1,5 @@
 session_name: FITNESSITALY
-start_directory: /home/giacomo/Documents/Lavoro/FitnessItaly/fitnessitaly
+start_directory: /home/giacomo/Documents/Lavoro/Fitnessitaly/fitnessitaly
 windows:
   - window_name: Code
     panes:

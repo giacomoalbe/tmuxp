@@ -1,16 +1,21 @@
-session_name: SECURITYAPP
-start_directory: ~/Documents/Lavoro/24Consulting/securityapp
+session_name: BPER
+start_directory: ~/Documents/Lavoro/Digital74/BPER
 windows:
-  - window_name: Client
+  - window_name: FrontEnd
     panes:
       - shell_command:
-        - cd client
+        - cd client/
+        - vim
+  - window_name: BackEnd
+    panes:
+      - shell_command:
+        - cd server/
         - vim
   - window_name: Server
     panes:
       - shell_command:
-        - cd server
-        - vim
+        - cd client
+        - npm start
   - window_name: Logs
     panes:
       - shell_command:
@@ -22,7 +27,7 @@ windows:
   - window_name: Tinker
     panes:
       - shell_command:
-        - clear
+        - dc run server php artisan tinker
   - window_name: Docker
     panes:
       - shell_command:
