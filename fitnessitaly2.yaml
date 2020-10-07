@@ -19,11 +19,37 @@ windows:
     panes:
       - shell_command:
         - gs
+  - window_name: Artisan
+    panes:
+      - shell_command:
+        - tmux wait server-started
+        - dc exec server bash
   - window_name: Tinker
     panes:
       - shell_command:
-        - clear
+        - tmux wait server-started
+        - dc exec server bash -c "php artisan tinker"
   - window_name: Docker
     panes:
       - shell_command:
-        - ./start-dev.sh
+        - dc down && ./start-dev.sh
+        - tmux wait -S server-started
+  - window_name: Estia
+    panes:
+      - shell_command:
+        - cd plugins/estia
+        - vim
+  - window_name: Concorde
+    panes:
+      - shell_command:
+        - cd plugins/concorde
+        - vim
+  - window_name: Plugins Git
+    layout: main-vertical
+    panes:
+      - shell_command:
+        - cd plugins/estia
+        - git status
+      - shell_command:
+        - cd plugins/concorde
+        - git status
